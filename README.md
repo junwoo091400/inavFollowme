@@ -18,7 +18,7 @@ There are various modes of control, listed below. In all modes the quad will tur
 
 Additionally, the camera gimbal will turn to face the tag regardless of whether or not the follow-me system is active in the flight controller. For example, when flying fully manually or in other autonomous states such as return-to-home or waypoint mode, the camera gimbal will still face toward the tag.
 
-You can see more details and usage examples in this YouTube video: TODO
+You can see more details and usage examples in this YouTube video: TODO => Is this supposed to be a link?
 
 ## Requirements
 
@@ -130,6 +130,7 @@ Every 5 packets the 'heartbeat' LED will be toggled on or off. Typically there w
 
 **About heading control and gimbal aiming**  
 In all modes the quad and gimbal will turn to face the tag, as long as the quad and the tag are more than 2 meters apart horizontally. When they are close together the correct angle becomes hard to determine, which usually results in continual rotating back and forward as their relative positions move just a little. While technically this is the correct behavior, it's really annoying to watch the recorded video like that, so heading adjustment and gimbal aiming is not done when the quad and gimbal are close.
+=> At the End of this paragraph, you might need to change to: "When the 'quad and Tag' or 'Gimbal and Tag' are close"
 
 The yaw range of the gimbal being -180 to 180 degrees, means that when the desired yaw angle of the gimbal crosses from the very low end to the high end, the gimbal will turn almost a full revolution. This can happen when the tag goes around directly behind the quad. On a gimbal with unlimited yaw rotation and a quad with retractable landing gear this would not be a problem, but most affordable gimbals do not have unlimited yaw rotation. However, since the quad also turns to face the tag, this situation should not arise often.
 
